@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "no-constant-condition": [2, { "checkLoops": false }],
+    "no-mixed-operators": [1, { "allowSamePrecedence": true }],
+    "no-useless-constructor": 0,
+    "comma-dangle": [2, {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+    }],
+    "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
+    "react/prop-types": 1,
+    "react/no-did-update-set-state": 0
+  }
+}
